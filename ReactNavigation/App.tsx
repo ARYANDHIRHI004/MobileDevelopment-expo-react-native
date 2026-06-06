@@ -8,6 +8,7 @@ import profiles from './screens/profiles';
 import DynamicStack from './navigation/stack/DynamicStack';
 import { TabNavigation } from './navigation/tab/Tab';
 import DynamicTab from './navigation/tab/DynamicTabs';
+import { DrawerNavigation } from './navigation/drawer/drawer';
 
 const RootStack = createNativeStackNavigator({
   screens: {
@@ -28,7 +29,8 @@ export default function App() {
   return (
     // <Navigation />
     // <TabNavigation />
-    <DynamicTab />
+    // <DynamicTab />
+    <DrawerNavigation />
 
 )
 }
