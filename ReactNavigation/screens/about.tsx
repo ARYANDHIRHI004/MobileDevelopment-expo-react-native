@@ -7,10 +7,10 @@ import { useNavigation } from '@react-navigation/native'
 
 const about = ({route}: any) => {
     const navigation = useNavigation<any>();
-    const {username} = route.params;
+    // const {username} = route.params;
   return (
     <View>
-      <Text>about {username}</Text>
+      <Text>about {"Anonymous"}</Text>
       <Button onPress={()=>navigation.navigate('Profile')}>Go to Profile</Button>
     </View>
   )

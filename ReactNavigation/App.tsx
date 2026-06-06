@@ -6,10 +6,17 @@ import home from './screens/home';
 import about from './screens/about';
 import profiles from './screens/profiles';
 import DynamicStack from './navigation/stack/DynamicStack';
+import { TabNavigation } from './navigation/tab/Tab';
+import DynamicTab from './navigation/tab/DynamicTabs';
 
 const RootStack = createNativeStackNavigator({
   screens: {
-    Home: home,
+    Home: {
+      screen: home,
+      options:{
+        
+      }
+    },
     About: about,
     Profile: profiles,
   },
@@ -18,5 +25,10 @@ const RootStack = createNativeStackNavigator({
 const Navigation = createStaticNavigation(RootStack);
 
 export default function App() {
-  return <DynamicStack />;
+  return (
+    // <Navigation />
+    // <TabNavigation />
+    <DynamicTab />
+
+)
 }
