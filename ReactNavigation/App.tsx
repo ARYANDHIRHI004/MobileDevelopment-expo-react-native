@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import home from './screens/home';
 import about from './screens/about';
 import profiles from './screens/profiles';
+import DynamicStack from './navigation/stack/DynamicStack';
 
 const RootStack = createNativeStackNavigator({
   screens: {
@@ -17,5 +18,5 @@ const RootStack = createNativeStackNavigator({
 const Navigation = createStaticNavigation(RootStack);
 
 export default function App() {
-  return <Navigation />;
+  return <DynamicStack />;
 }
