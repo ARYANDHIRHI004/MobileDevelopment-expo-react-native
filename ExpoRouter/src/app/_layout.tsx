@@ -1,9 +1,9 @@
-import { Slot } from "expo-router";
+import { Slot, Stack } from "expo-router";
 import React from "react";
 import { StyleSheet } from "react-native";
 
 const _layout = () => {
-  return <Slot />;
+  return <Stack screenOptions={{headerShown: false}} />
 };
 
 export default _layout;
